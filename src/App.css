@@ -1,0 +1,150 @@
+/* ! ++++++++++ BASIC ++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #b8b8ff;
+  --dark: #9381ff;
+  --light: #f8f7ff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* ! ++++++++++ HOME ++++++++++ */
+
+.home-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+/* ! ++++++++++ OUTPUT ++++++++++ */
+
+.output-section {
+  width: 40rem;
+  height: 60rem;
+  padding: 2rem;
+  border: 2px solid var(--dark);
+  color: var(--light);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.output-section .todos-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.output-section .todos-list div {
+  width: 100%;
+  height: 4rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.output-section .todos-list div .completed {
+  text-decoration: line-through;
+}
+
+.output-section .todos-list div button {
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--main);
+  border: none;
+  border: 2px solid var(--dark);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.output-section .todos-list div button:hover {
+  transform: scale(1.05);
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+/* ! ++++++++++ INPUT ++++++++++ */
+
+.input-section {
+  width: 40rem;
+  height: 10rem;
+  border: 2px solid var(--dark);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-section form {
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-section form input[type="text"] {
+  width: 20rem;
+  height: 4rem;
+  padding-left: 1rem;
+  border: none;
+  border: 2px solid var(--dark);
+  background-color: var(--main);
+  border-radius: 1rem;
+}
+
+.input-section form input[type="submit"] {
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--main);
+  border: none;
+  border: 2px solid var(--dark);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.input-section form input[type="submit"]:hover {
+  transform: scale(1.05);
+  background-color: var(--dark);
+  color: var(--light);
+}
